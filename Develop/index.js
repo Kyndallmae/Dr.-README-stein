@@ -117,7 +117,8 @@ const getMarkdown = (answers) => {
     const { title, description, toc1, toc2, toc3, toc4, toc5, toc6, toc7, toc8, toc9, instillation, usage, license, contribution, tests, email, questions } = answers;
 
     return `
-# ${title}
+#  Title
+    ${title} 
 
 ## ${renderLicense(license)}
 
@@ -125,15 +126,13 @@ const getMarkdown = (answers) => {
     ${description}
 
 ## Table of Contents
-   1. ${toc1}
+   1. ${toc1} [Instrilation] (#instilation)
    2. ${toc2}
    3. ${toc3}
    4. ${toc4}
    5. ${toc5}
    6. ${toc6}
    7. ${toc7}
-   8. ${toc8}
-   9. ${toc9}
 
 ## Instillation
     ${instillation}
