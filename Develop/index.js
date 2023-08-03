@@ -1,8 +1,9 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
-const renderLicenseBadge = require('./utils/generateMarkdown');
+// const generateMarkdown = require('./utils/generateMarkdown');
+const renderLicense = require('./utils/generateMarkdown');
+// const renderLicenseLink = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -113,46 +114,43 @@ inquirer
     });
 
 const getMarkdown = (answers) => {
-    const { title, description, toc1, toc2, toc3, toc4, toc5, toc6, toc7, toc8, toc9, instillation, usage, license, licenseBadge, contribution, tests, email, questions } = answers;
+    const { title, description, toc1, toc2, toc3, toc4, toc5, toc6, toc7, toc8, toc9, instillation, usage, license, contribution, tests, email, questions } = answers;
 
-//     return `
-// # ${title}
+    return `
+# ${title}
 
-// ## ${licenseBadge}
+## ${renderLicense(license)}
 
-// ## Description
-//     ${description}
+## Description
+    ${description}
 
-// ## Table of Contents
-//    1. ${toc1}
-//    2. ${toc2}
-//    3. ${toc3}
-//    4. ${toc4}
-//    5. ${toc5}
-//    6. ${toc6}
-//    7. ${toc7}
-//    8. ${toc8}
-//    9. ${toc9}
+## Table of Contents
+   1. ${toc1}
+   2. ${toc2}
+   3. ${toc3}
+   4. ${toc4}
+   5. ${toc5}
+   6. ${toc6}
+   7. ${toc7}
+   8. ${toc8}
+   9. ${toc9}
 
-// ## Instillation
-//     ${instillation}
+## Instillation
+    ${instillation}
 
-// ## Usage
-//     ${usage}
+## Usage
+    ${usage}
 
-// ## License
-//     ${license}
+## Contributtion
+    ${contribution}
 
-// ## Contributtion
-//     ${contribution}
+## Tests
+    ${tests}
 
-// ## Tests
-//     ${tests}
-
-// ## Questions
-//     ${questions}
-//     ${email}  
-// `;
+## Questions
+    ${questions}
+    ${email}  
+`;
 }
 
 // TODO: Create a function to initialize app
