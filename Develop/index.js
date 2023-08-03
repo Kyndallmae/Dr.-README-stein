@@ -149,7 +149,9 @@ const getMarkdown = (answers) => {
 
 ## Questions
     ${questions}
-    ${email}  
+    * https://github.com/Kyndallmae
+    ${email} 
+    * Please email me with any questions you may have. Available times: M-Th, 9-5. 
 `;
 }
 
