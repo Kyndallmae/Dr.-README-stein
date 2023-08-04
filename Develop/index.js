@@ -96,7 +96,7 @@ const questions = [
     {
         type: "input",
         message: "How do you install your app?",
-        name: "instillation"
+        name: "installation"
     }
 ];
 
@@ -114,7 +114,7 @@ inquirer
     });
 
 const getMarkdown = (answers) => {
-    const { title, description, toc1, toc2, toc3, toc4, toc5, toc6, toc7, instillation, usage, license, contribution, tests, email, questions } = answers;
+    const { title, description, toc1, toc2, toc3, toc4, toc5, toc6, toc7, installation, usage, license, contribution, tests, email, questions } = answers;
 
     return `
 #  Title
@@ -134,8 +134,8 @@ const getMarkdown = (answers) => {
    6. ${toc6}
    7. ${toc7}
 
-## Instillation
-    ${instillation}
+## Installation
+    ${installation}
 
 ## Usage
     ${usage}
