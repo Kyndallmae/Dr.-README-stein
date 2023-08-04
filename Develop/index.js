@@ -126,7 +126,7 @@ const getMarkdown = (answers) => {
     ${description}
 
 ## Table of Contents
-   1. ${toc1} [Instrilation] (#instilation)
+   1. ${toc1} 
    2. ${toc2}
    3. ${toc3}
    4. ${toc4}
