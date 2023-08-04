@@ -114,7 +114,7 @@ inquirer
     });
 
 const getMarkdown = (answers) => {
-    const { title, description, toc1, toc2, toc3, toc4, toc5, toc6, toc7, installation, usage, license, contribution, tests, email, questions } = answers;
+    const { title, description, toc1, toc2, toc3, toc4, toc5, installation, usage, license, contribution, tests, email, questions } = answers;
 
     return `
 #  Title
@@ -131,8 +131,7 @@ const getMarkdown = (answers) => {
    3. ${toc3}
    4. ${toc4}
    5. ${toc5}
-   6. ${toc6}
-   7. ${toc7}
+
 
 ## Installation
     ${installation}
