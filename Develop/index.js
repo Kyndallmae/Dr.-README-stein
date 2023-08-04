@@ -44,26 +44,6 @@ const questions = [
     },
     {
         type: "input",
-        message: "What is the sixth item in your Table Of Contents.",
-        name: "toc6"
-    },
-    {
-        type: "input",
-        message: "What is the seventh item in your Table Of Contents.",
-        name: "toc7"
-    },
-    {
-        type: "input",
-        message: "What is the eighth item in your Table Of Contents.",
-        name: "toc8"
-    },
-    {
-        type: "input",
-        message: "What is the ninth item in your Table Of Contents.",
-        name: "toc9"
-    },
-    {
-        type: "input",
         message: "What is your application used for?",
         name: "usage"
     },
