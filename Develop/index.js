@@ -114,7 +114,7 @@ inquirer
     });
 
 const getMarkdown = (answers) => {
-    const { title, description, toc1, toc2, toc3, toc4, toc5, toc6, toc7, toc8, toc9, instillation, usage, license, contribution, tests, email, questions } = answers;
+    const { title, description, toc1, toc2, toc3, toc4, toc5, toc6, toc7, instillation, usage, license, contribution, tests, email, questions } = answers;
 
     return `
 #  Title
