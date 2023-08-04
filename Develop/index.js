@@ -44,6 +44,11 @@ const questions = [
     },
     {
         type: "input",
+        message: "How do you install your app?",
+        name: "installation"
+    },
+    {
+        type: "input",
         message: "What is your application used for?",
         name: "usage"
     },
@@ -73,12 +78,9 @@ const questions = [
         message: "What is your email?",
         name: "email"
     },
-    {
-        type: "input",
-        message: "How do you install your app?",
-        name: "installation"
-    }
 ];
+
+
 
 inquirer
     .prompt(questions)
